@@ -1,0 +1,34 @@
+{
+  "name": "INFRAWATCH — Urban Safety Crisis Response",
+  "short_name": "INFRAWATCH",
+  "description": "AI-powered satellite detection of illegal construction with SLA-tracked enforcement workflow.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#080A0D",
+  "theme_color": "#F5A623",
+  "categories": ["government", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Run AI City Scan",
+      "short_name": "City Scan",
+      "description": "Trigger a multi-ward AI scan",
+      "url": "/?action=cityscan"
+    },
+    {
+      "name": "Live Detection",
+      "short_name": "Live Scan",
+      "description": "Open the live satellite scan map",
+      "url": "/?view=live-detection"
+    }
+  ]
+}

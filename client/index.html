@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#F5A623" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="INFRAWATCH" />
+
+  <!-- Primary -->
+  <title>INFRAWATCH — AI Urban Safety Crisis Response Platform | Bengaluru</title>
+  <meta name="description" content="INFRAWATCH is an AI-powered satellite detection platform for illegal construction in Bengaluru. Built for Google Solution Challenge 2026, aligned with UN SDG 11 (Sustainable Cities) and SDG 16 (Peace, Justice, Strong Institutions)." />
+  <meta name="keywords" content="INFRAWATCH, illegal construction detection, satellite AI, Bengaluru, BBMP, urban safety, crisis response, SDG 11, SDG 16, Google Solution Challenge 2026, Gemini, municipal enforcement" />
+  <meta name="author" content="INFRAWATCH team" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://infrawatch-sepia.vercel.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="INFRAWATCH" />
+  <meta property="og:title" content="INFRAWATCH — AI Urban Safety Crisis Response Platform" />
+  <meta property="og:description" content="AI-powered satellite detection of illegal construction in Bengaluru. Aligned with UN SDG 11 & SDG 16. Built for Google Solution Challenge 2026." />
+  <meta property="og:url" content="https://infrawatch-sepia.vercel.app/" />
+  <meta property="og:image" content="https://infrawatch-sepia.vercel.app/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="INFRAWATCH crisis response dashboard with live satellite violation detection" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="INFRAWATCH — AI Urban Safety Crisis Response" />
+  <meta name="twitter:description" content="AI-powered satellite detection of illegal construction in Bengaluru. SDG 11 + SDG 16 aligned." />
+  <meta name="twitter:image" content="https://infrawatch-sepia.vercel.app/og-image.png" />
+  <meta name="twitter:image:alt" content="INFRAWATCH platform screenshot" />
+
+  <!-- PWA / icons -->
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+  <link rel="alternate icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/icon.svg" />
+  <link rel="shortcut icon" href="/icon.svg" />
+
+  <!-- Fonts & mapping CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Structured data (JSON-LD) for richer Google results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "INFRAWATCH",
+    "applicationCategory": "GovernmentApplication",
+    "operatingSystem": "Web",
+    "description": "AI-powered satellite detection of illegal construction in Bengaluru. Aligned with UN SDG 11 and SDG 16.",
+    "url": "https://infrawatch-sepia.vercel.app/",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+    "creator": { "@type": "Organization", "name": "INFRAWATCH team" }
+  }
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch((err) => console.warn('SW reg failed:', err));
+      });
+    }
+  </script>
+</body>
+</html>

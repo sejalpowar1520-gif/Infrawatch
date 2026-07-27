@@ -1,0 +1,29 @@
+# Render deployment config — free tier
+# Push this repo to GitHub, then at dashboard.render.com → New Blueprint → connect repo.
+# Render reads this file and creates the service automatically.
+
+services:
+  - type: web
+    name: infrawatch-backend
+    env: node
+    rootDir: server
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 20.11.1
+      - key: PORT
+        value: 10000
+      - key: AI_PROVIDER
+        value: gemini
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+      # Set these secrets in the Render dashboard (not here) — never commit API keys
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true

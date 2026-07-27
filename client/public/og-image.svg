@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="bg" cx="80%" cy="20%" r="100%">
+      <stop offset="0%" stop-color="#1a1420" />
+      <stop offset="40%" stop-color="#0c0d12" />
+      <stop offset="100%" stop-color="#060608" />
+    </radialGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0%" stop-color="#F5A623" />
+      <stop offset="100%" stop-color="#E09612" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <!-- Grid lines (subtle) -->
+  <g stroke="#1E2533" stroke-width="0.5" opacity="0.6">
+    <line x1="0" y1="150" x2="1200" y2="150" />
+    <line x1="0" y1="300" x2="1200" y2="300" />
+    <line x1="0" y1="450" x2="1200" y2="450" />
+    <line x1="300" y1="0" x2="300" y2="630" />
+    <line x1="600" y1="0" x2="600" y2="630" />
+    <line x1="900" y1="0" x2="900" y2="630" />
+  </g>
+
+  <!-- Satellite circles -->
+  <g transform="translate(940, 150)" opacity="0.7">
+    <circle r="100" fill="none" stroke="#F5A623" stroke-width="1.5" opacity="0.25" />
+    <circle r="70" fill="none" stroke="#F5A623" stroke-width="1.5" opacity="0.5" />
+    <circle r="40" fill="#F5A623" opacity="0.15" />
+    <circle r="20" fill="url(#accent)" filter="url(#glow)" />
+  </g>
+
+  <!-- Crisis pulse dots -->
+  <g transform="translate(150, 460)">
+    <circle cx="0" cy="0" r="8" fill="#FF3B30" />
+    <circle cx="0" cy="0" r="18" fill="none" stroke="#FF3B30" stroke-width="1" opacity="0.4" />
+  </g>
+  <g transform="translate(250, 500)">
+    <circle cx="0" cy="0" r="5" fill="#F5A623" />
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#F5A623" stroke-width="1" opacity="0.4" />
+  </g>
+  <g transform="translate(380, 480)">
+    <circle cx="0" cy="0" r="5" fill="#FF3B30" />
+  </g>
+
+  <!-- Theme tag -->
+  <text x="80" y="110" font-family="Courier, monospace" font-size="18" font-weight="700" fill="#F5A623" letter-spacing="4">
+    GOOGLE SOLUTION CHALLENGE 2026  ·  RAPID CRISIS RESPONSE
+  </text>
+
+  <!-- Big brand -->
+  <text x="80" y="230" font-family="Helvetica, Arial, sans-serif" font-size="96" font-weight="900" fill="#E8E9EA" letter-spacing="-2">
+    INFRAWATCH
+  </text>
+
+  <!-- Tagline -->
+  <text x="80" y="300" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#B8BCC4" font-weight="400">
+    Urban Safety Crisis Response Platform
+  </text>
+  <text x="80" y="340" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#8A8F98" font-weight="400">
+    AI-powered satellite detection of illegal construction · Bengaluru
+  </text>
+
+  <!-- Impact stats -->
+  <g transform="translate(80, 400)">
+    <rect width="260" height="90" fill="#0F1117" stroke="#2A2D35" rx="6" />
+    <text x="20" y="30" font-family="Courier, monospace" font-size="12" fill="#8A8F98" letter-spacing="1">VIOLATIONS / YEAR</text>
+    <text x="20" y="72" font-family="Helvetica, Arial, sans-serif" font-size="44" font-weight="900" fill="#F5A623">14.7×</text>
+  </g>
+
+  <g transform="translate(360, 400)">
+    <rect width="260" height="90" fill="#0F1117" stroke="#2A2D35" rx="6" />
+    <text x="20" y="30" font-family="Courier, monospace" font-size="12" fill="#8A8F98" letter-spacing="1">DETECTION TO NOTICE</text>
+    <text x="20" y="72" font-family="Helvetica, Arial, sans-serif" font-size="44" font-weight="900" fill="#34C759">219× faster</text>
+  </g>
+
+  <g transform="translate(640, 400)">
+    <rect width="260" height="90" fill="#0F1117" stroke="#2A2D35" rx="6" />
+    <text x="20" y="30" font-family="Courier, monospace" font-size="12" fill="#8A8F98" letter-spacing="1">PENALTY RECOVERY</text>
+    <text x="20" y="72" font-family="Helvetica, Arial, sans-serif" font-size="36" font-weight="900" fill="#4A9EFF">₹1,240 Cr</text>
+  </g>
+
+  <!-- Bottom bar -->
+  <rect x="0" y="590" width="1200" height="40" fill="#0A0C10" />
+  <text x="80" y="615" font-family="Courier, monospace" font-size="14" fill="#8A8F98" letter-spacing="2">
+    Gemini 2.5 Flash  ·  UN SDG 11 + 16  ·  Open Source  ·  infrawatch-sepia.vercel.app
+  </text>
+</svg>
